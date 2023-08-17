@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: './index',
+  entry: './src/webgl',
   mode: 'production',
   output: {
     filename: 'main.js',
@@ -39,7 +39,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Phaser Game',
+      title: 'WebGL Template',
       template: path.resolve(__dirname, 'index.html'),
     }),
     new CopyWebpackPlugin({

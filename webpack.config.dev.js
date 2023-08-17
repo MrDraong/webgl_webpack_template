@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './index',
+  entry: './src/webgl',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'build'),
@@ -40,7 +40,7 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Phaser Game',
+      title: 'WebGL Template',
       template: path.resolve(__dirname, 'index.html'),
     }),
     new CopyWebpackPlugin({
